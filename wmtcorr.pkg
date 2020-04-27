@@ -1,0 +1,9 @@
+v 1.0.0
+d 'WMTCORR': wmtcorr
+d 
+d output a correlation coefficient matrix to Word, LaTeX, Stata interface.
+d 
+d Distribution-Date:   20200427
+d License: MIT
+d 
+F wmtcorr.ado
