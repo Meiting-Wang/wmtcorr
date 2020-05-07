@@ -1,7 +1,7 @@
-* Feather: output correlation coefficient matrix to Stata interface, Word and LaTeX
+* Description: output correlation coefficient matrix to Stata interface, Word as well as LaTeX
 * Author: Meiting Wang, Master, School of Economics, South-Central University for Nationalities
-* Email: 2017110097@mail.scuec.edu.cn
-* Created on Oct 24th, 2019
+* Email: wangmeiting92@gmail.com
+* Created on May 8th, 2020
 
 
 program define wmtcorr
@@ -10,24 +10,7 @@ version 15.1
 syntax [varlist(numeric default=none)] [if] [in] [aw fw iw pw/] [using/] [, ///
 	replace append B Bfmt(string) P Pfmt(string) STARAUX NOSTAR ///
 	CORR PWCORR TItle(string) Alignment(string) PAGE(string)]
-/*
-optional illustration:
-1. varlist: only numeric variable names permitted.
-2. b(): set the coefficient's format(coefficient will be reported no matter what cases are).
-3. p(): report p-value and set its format.
-4. staraux: staraux and p should exist at the same time, then the stars will be 
-marked on the p-value.
-5. nostar: not report the stars.
-6. corr: display the correlation coefficient matrix like the default of corr command.
-7. pwcorr: display the correlation coefficient matrix like the default of corr command.
-8. title(): set the title for the reported table, Correlation coefficient matrix as the default.
-9. alignment(): only used in the LaTeX output, set the column format of the LaTeX
-table, but it will not impact the column format in the Stata output table, dot as 
-the default.
-10. page(): only used in the LaTeX output,set the extra package for the LaTeX code.
-please don't need to add the package of booktabs array dcolumn, because the code 
-will automatic process these with the option of alignment().
-*/
+
 
 *--------设置默认格式------------
 local b_default_fmt "%11.3f"
@@ -69,7 +52,7 @@ if (~ustrregexm("`using'",".tex"))&("`alignment'`page'"!="") {
 *---------前期语句处理----------
 *普通选项语句的处理
 if "`varlist'" == "" {
-	drop _est*
+	cap drop _est*
 	qui ds, has(type numeric)
 	local varlist "`r(varlist)'"
 } //如果没有设定变量，则自动导入所有的数值变量。
@@ -121,9 +104,14 @@ else {
 }
 
 *构建esttab中alignment()和page()内部的语句(LaTeX输出专属)
+if "`alignment'" == "" {
+	local alignment "math"
+} //设置默认的alignment
+
 if "`page'" != "" {
 	local page ",`page'"
 }
+
 if "`alignment'" == "math" {
 	local page "array`page'"
 	local alignment ">{$}c<{$}"
