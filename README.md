@@ -62,7 +62,7 @@ wmtcorr [varlist] [if] [in] [weight] [using filename] [, options]
 
 - 一般选项
   - `b(fmt)`：设置相关系数的数值格式
-  - `p(fmt)`：额外报告 P 值，以及设置 P 值得数值格式
+  - `p(fmt)`：额外报告 P 值，以及设置 P 值的数值格式
   - `title()`：设置表格标题，默认为`Correlation coefficient matrix`
   - `staraux`：在 P 值上标注星号（`* p<0.1, ** p<0.05, *** p<0.01`）
   - `nostar`：不报告星号
