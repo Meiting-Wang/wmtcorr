@@ -123,6 +123,7 @@ wangmeiting92@gmail.com
 {* -----------------------------Also see------------------------------------ *}{...}
 {marker Also_see}{title:Also see}
 
+{space 4}{help esttab}(already installed)  {col 40}{stata ssc install estout:install esttab}(to install)
 {space 4}{help wmtsum}(already installed)  {col 40}{stata github install Meiting-Wang/wmtsum:install wmtsum}(to install)
 {space 4}{help wmttest}(already installed) {col 40}{stata github install Meiting-Wang/wmttest:install wmttest}(to install)
 {space 4}{help wmtreg}(already installed)  {col 40}{stata github install Meiting-Wang/wmtreg:install wmtreg}(to install)
