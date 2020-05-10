@@ -96,7 +96,7 @@ wmtcorr price foreign length rep78 using Myfile.tex, replace a(dot) //将 LaTeX 
 ```
 
 > 以上所有实例都可以在`help wmtcorr`中直接运行。
-> ![](https://imgkr.cn-bj.ufileos.com/67d6ef19-c7e0-4617-a657-0329cb2825bd.png)
+> ![image](https://user-images.githubusercontent.com/42256486/81492156-3e074600-92c8-11ea-98dc-00352c4e4c40.png)
 
 ## 五、输出效果展示
 
@@ -147,7 +147,7 @@ p-values in parentheses
 wmtcorr price foreign length rep78 using Myfile.rtf, replace
 ```
 
-![](https://imgkr.cn-bj.ufileos.com/1f5f476d-a4da-4bd2-8e15-861fd0a82058.png)
+![image](https://user-images.githubusercontent.com/42256486/81492162-4495bd80-92c8-11ea-9c4e-789105b08ef7.png)
 
 - **LaTeX**
 
@@ -155,12 +155,13 @@ wmtcorr price foreign length rep78 using Myfile.rtf, replace
 wmtcorr price foreign length rep78 using Myfile.tex, replace
 ```
 
-![](https://imgkr.cn-bj.ufileos.com/e75e63c9-5f58-4186-9cca-54c79ffce769.png)
+![image](https://user-images.githubusercontent.com/42256486/81492165-48294480-92c8-11ea-8b16-7b9b17f1cd0d.png)
 
 ```stata
 wmtcorr price foreign length rep78 using Myfile.tex, replace a(dot)
 ```
 
-![](https://imgkr.cn-bj.ufileos.com/e7ff8dab-cf40-4604-ad75-bf2c90709c70.png)
+![image](https://user-images.githubusercontent.com/42256486/81492166-4c556200-92c8-11ea-8f55-da4ec04862f7.png)
+
 
 > 在将结果输出至 Word 或 LaTeX 时，Stata 界面上也会呈现对应的结果，以方便查看。
