@@ -1,5 +1,5 @@
 {smcl}
-
+{right:Updated time: May 8, 2020}
 {* -----------------------------title------------------------------------ *}{...}
 {p 0 17 2}
 {bf:[W-3] wmtcorr} {hline 2} output correlation coefficient matrix to Stata interface, Word as well as LaTeX. The source code can be gained in {browse "https://github.com/Meiting-Wang/wmtcorr":github}.
