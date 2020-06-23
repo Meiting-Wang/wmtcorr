@@ -123,6 +123,7 @@ else {
 
 
 *---------------------主程序-----------------------------
+eststo clear
 qui estpost correlate `varlist' `if' `in' `weight', matrix `st_cp'
 esttab, compress ///
 	unstack not noobs nogaps nomti nonum ///
