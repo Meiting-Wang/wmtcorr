@@ -1,10 +1,9 @@
-v v1.0.0
-d 'WMTCORR': wmtcorr
-d 
-d Output correlation coefficient matrix to Stata interface, Word as well as LaTeX.
-d 
-d Distribution-Date:   20200508
-d License: MIT
-d 
-F wmtcorr.ado
-F wmtcorr.sthlp
+v 1.0.0
+d wmtcorr. Output correlation coefficient matrix to Stata interface, Word as well as LaTeX
+d Meiting Wang
+d Institute for Economic and Social Research, Jinan University
+d Guangzhou, China
+d wangmeiting92@gmail.com
+
+f wmtcorr.ado
+f wmtcorr.sthlp
